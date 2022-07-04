@@ -6,13 +6,13 @@
   >9-Ejercicios 
 ## PYTHON
   >TEMA 1
-  >>1-Ejercicios
-  >>2-Ejercicios
+    >>1-Ejercicios
+    >>2-Ejercicios
   >TEMA 2
-  >>3-Ejercicios
-  >>4-Ejercicios
+    >>3-Ejercicios
+    >>4-Ejercicios
   >TEMA 3
-  >>5-Ejercicios
-  >>6-Ejercicios
+    >>5-Ejercicios
+    >>6-Ejercicios
   
   
