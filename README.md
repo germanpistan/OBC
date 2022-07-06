@@ -43,6 +43,6 @@
 ### TEMA 11  
    > 23-Ejercicio
 ### TEMA 12  
-   > 24 -Ejercicio
+   > Carpeta TEMA12
 
   
