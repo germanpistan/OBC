@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo-Clases</title>
+    <!--https://www.w3schools.com/css/css_pseudo_classes.asp-->
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .hover{
+            width:300px;
+            heigth:100px;
+            background-color:bisque;
+        }
+        .hover:hover{
+            /*se activa cuando el mouse pasa por encima*/
+            background-color: brown;
+        }
+        .listado{
+            padding: 15px;
+            background-color: aquamarine;
+        }
+        .listado p:first-child{
+            color: white;
+        }
+        a:link{/*link no visitado*/
+            color: deeppink;
+        }
+        a:visited{
+            color:crimson;
+        }
+        a:hover{
+            color:pink;
+        }
+        a:active{
+            color:yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover">
+        <p>
+            Velit elit anim proident velit officia amet sit dolor eu 
+            in nisi reprehenderit. Mollit culpa commodo eiusmod occaecat.
+            Cupidatat commodo proident deserunt enim tempor velit.
+        </p>
+    </div>
+    <div class="listado">
+        <p>Cupidatat commodo proident deserunt enim tempor velit1</p>
+        <p>Cupidatat commodo proident deserunt enim tempor velit2</p>
+        <p>Cupidatat commodo proident deserunt enim tempor velit3</p>
+    </div>
+    <div class="enlaces">
+        <a href="https://google.com" target="_blank">Enlace a google</a>
+        <a href="https://marca.com" target="_blank">Enlace a Marca</a>
+    </div>
+</body>
+</html>
