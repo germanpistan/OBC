@@ -1,0 +1,40 @@
+h1{
+    color: red;
+    font-size: 2rem;
+}
+
+p{
+    color: black;
+    font-size: 2rem;
+}
+
+/*@media (max-width:576px){
+    h1{
+        color: blue;
+    }
+}*/
+
+
+@media (min-width:576px){
+    h1{
+        color: green;
+    }
+}
+
+@media (min-width:995px){
+    h1{
+        color: blue;
+    }
+}
+
+@media (min-width:300px){
+    p{
+        color: cyan;
+    }
+}
+
+@media (orientacion: landscape) and (min-width:400px){
+    p{
+        color: brown;
+    }
+}
