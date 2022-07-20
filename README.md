@@ -45,5 +45,8 @@
 ### TEMA 12  
    > Carpeta TEMA12
 ## HTML-CSS
-
+## JAVA SCRIPT
+### TEMA 1
+  > 1-Ejercicio
+  
   
