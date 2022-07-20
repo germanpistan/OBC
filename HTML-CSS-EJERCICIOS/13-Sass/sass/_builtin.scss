@@ -1,0 +1,55 @@
+@use "sass:string";
+@use "sass:math";
+@use "sass:list";
+@use "sass:selector";
+@use "sass:color";
+
+@debug "hola";
+@debug string.index("Helvetica Neue", "Neue");
+
+$string:"Helvetica";
+$newString: string.insert($string,"Bold", 10);
+
+@debug $newString;
+@debug str-length($newString);
+@debug str-slice($newString, 5,9);
+@debug string.to-upper-case("Hola Como EStas");
+@debug string.to-lower-case("Hola Como EStas");
+@debug string.unique-id();
+////Funciones con numeros
+
+@debug math.$e;
+@debug math.$pi;
+
+@debug math.floor(4.35);
+@debug math.ceil(4.35);
+@debug math.round(4.35);
+
+@debug math.clamp(0,6.35,10);
+
+@debug math.max(3,4,344,2,10);
+@debug math.min(3,4,344,2,10);
+
+@debug math.pow(2, math.abs(-23));
+
+//Funciones con listas
+$lista1: 10px, 10px, 0px, 15px;
+
+@debug $lista1;
+@debug append($lista1, 25px, space);
+
+$border-custom: solid 1px #ccc;
+@debug index($border-custom, 1px);
+
+//Funciones selector
+$selector-1: "a";
+$selector-2:".disabled";
+@debug selector.append($selector-1,$selector-2);
+
+//Funcines color
+$color: rgb(226, 81, 255);
+//@debug color.adjust($color, $red:-50, $alfa:-0.5);
+$color2: rgb(176,81,255,0.5);
+
+@debug color.complement($color2);
+@debug darken($color, 10%);
