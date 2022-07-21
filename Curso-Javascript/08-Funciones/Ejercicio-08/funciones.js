@@ -17,7 +17,15 @@ function* idsPares() {
     while(true) {
         yield id += 2
     }
+    return id
 }
+
+const gen=idsPares()
 
 console.log(devuelveTrue())
 damePromesa()
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
