@@ -1,0 +1,130 @@
+Identifica las características principales de los patrones de diseño más conocidos, indica para qué valen y un caso de uso para cada uno de ellos.
+
+Un patrón de diseño es una forma reutilizable de resolver un problema común.
+
+¿Por qué son útiles los patrones de diseño?
+
+1. Te ahorran tiempo.
+2. Te ayudan a estar seguro de la validez de tu código.
+3. Establecen un lenguaje común.
+
+¿Cómo identificar qué patrón encaja con tu problema?
+
+Se aprende practicando.
+Head First Design Patterns, en el que además de explicarte los patrones de forma muy amena, explican muy bien cómo usarlos en la vida real.
+
+*Patrones creacionales:
+	Estos patrones proporcionan mecanismos de creación de objetos que 	incrementan la flexibilidad y la reutilización del código existente.
+
+	-Singleton
+	También llamado: Instancia única
+ 	Propósito
+		Singleton es un patrón de diseño creacional que nos 		permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
+
+	-Prototype
+	También llamado: Prototipo, Clon, Clone
+ 	Propósito
+		Prototype es un patrón de diseño creacional que nos permite copiar objetos existentes sin que el código dependa de sus clases.
+
+	-Builder
+	También llamado: Constructor
+	 Propósito
+		Builder es un patrón de diseño creacional que nos permite construir objetos complejos paso a paso. El patrón nos permite producir distintos tipos y representaciones de un objeto empleando el mismo código de construcción.
+	-Abstract Factory
+	También llamado: Fábrica abstracta
+	 Propósito
+		Abstract Factory es un patrón de diseño creacional que nos permite producir familias de objetos relacionados sin especificar sus clases concretas.
+	-Factory Method
+	También llamado: Método fábrica, Constructor virtual
+	 Propósito
+		Factory Method es un patrón de diseño creacional que proporciona una interfaz para crear objetos en una superclase, mientras permite a las subclases alterar el tipo de objetos que se crearán.
+
+*Patrones estructurales:
+	Estos patrones explican cómo ensamblar objetos y clases en estructuras más grandes, mientras se mantiene la flexibilidad y eficiencia de la estructura.
+
+	-Proxy
+	 Propósito
+		Proxy es un patrón de diseño estructural que te permite proporcionar un sustituto o marcador de posición para otro objeto. Un proxy controla el acceso al objeto original, permitiéndote hacer algo antes o después de que la solicitud llegue al objeto original.
+
+	-Flyweight
+	También llamado: Peso mosca, Peso ligero, Cache
+ 	Propósito
+		Flyweight es un patrón de diseño estructural que te permite mantener más objetos dentro de la cantidad disponible de RAM compartiendo las partes comunes del estado entre varios objetos en lugar de mantener toda la información en cada objeto.
+
+	-Facade
+	También llamado: Fachada
+ 	Propósito
+		Facade es un patrón de diseño estructural que proporciona una interfaz simplificada a una biblioteca, un framework o cualquier otro grupo complejo de clases.
+
+	-Decorator
+	También llamado: Decorador, Envoltorio, Wrapper
+	 Propósito
+		Decorator es un patrón de diseño estructural que te permite añadir funcionalidades a objetos colocando estos objetos dentro de objetos encapsuladores especiales que contienen estas funcionalidades.
+	
+	-Composite
+	También llamado: Objeto compuesto, Object Tree
+	 Propósito
+		Composite es un patrón de diseño estructural que te permite componer objetos en estructuras de árbol y trabajar con esas estructuras como si fueran objetos individuales.
+
+	-Bridge
+	También llamado: Puente
+	Propósito
+		Bridge es un patrón de diseño estructural que te permite dividir una clase grande, o un grupo de clases estrechamente relacionadas, en dos jerarquías separadas (abstracción e implementación) que pueden desarrollarse independientemente la una de la otra.
+
+	-Adapter
+	También llamado: Adaptador, Envoltorio, Wrapper
+	Propósito
+		Adapter es un patrón de diseño estructural que permite la colaboración entre objetos con interfaces incompatibles.
+
+*Patrones de comportamiento
+	Estos patrones tratan con algoritmos y la asignación de responsabilidades entre objetos.
+
+	-Visitor
+	También llamado: Visitante
+	Propósito
+		Visitor es un patrón de diseño de comportamiento que te permite separar algoritmos de los objetos sobre los que operan.
+	
+	-Template Method
+	También llamado: Método plantilla
+	Propósito
+		Template Method es un patrón de diseño de comportamiento que define el esqueleto de un algoritmo en la superclase pero permite que las subclases sobrescriban pasos del algoritmo sin cambiar su estructura.
+	
+	-Strategy
+	También llamado: Estrategia
+	Propósito
+		Strategy es un patrón de diseño de comportamiento que te permite definir una familia de algoritmos, colocar cada uno de ellos en una clase separada y hacer sus objetos intercambiables.
+
+	-State
+	También llamado: Estado
+	Propósito
+		State es un patrón de diseño de comportamiento que permite a un objeto alterar su comportamiento cuando su estado interno cambia. Parece como si el objeto cambiara su clase.
+	
+	-Observer
+	También llamado: Observador, Publicación-Suscripción, Modelo-patrón, Event-Subscriber, Listener
+	Propósito
+		Observer es un patrón de diseño de comportamiento que te permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que le suceda al objeto que están observando.
+
+	-Memento
+	También llamado: Recuerdo, Instantánea, Snapshot
+	Propósito
+		Memento es un patrón de diseño de comportamiento que te permite guardar y restaurar el estado previo de un objeto sin revelar los detalles de su implementación.
+
+	-Mediator
+	También llamado: Mediador, Intermediary, Controller
+	Propósito
+		Mediator es un patrón de diseño de comportamiento que te permite reducir las dependencias caóticas entre objetos. El patrón restringe las comunicaciones directas entre los objetos, forzándolos a colaborar únicamente a través de un objeto mediador.
+	
+	-Iterator
+	También llamado: Iterador
+	Propósito
+		Iterator es un patrón de diseño de comportamiento que te permite recorrer elementos de una colección sin exponer su representación subyacente (lista, pila, árbol, etc.).
+
+	-Command
+	También llamado: Comando, Orden, Action, Transaction
+	Propósito
+		Command es un patrón de diseño de comportamiento que convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación te permite parametrizar los métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud y soportar operaciones que no se pueden realizar.
+	
+	-Chain of Responsibility
+	También llamado: Cadena de responsabilidad, CoR, Chain of Command
+	Propósito
+		Chain of Responsibility es un patrón de diseño de comportamiento que te permite pasar solicitudes a lo largo de una cadena de manejadores. Al recibir una solicitud, cada manejador decide si la procesa o si la pasa al siguiente manejador de la cadena.
